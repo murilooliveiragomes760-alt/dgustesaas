@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --vm:#8B0000; --vm2:#A80000; --vml:rgba(139,0,0,0.12);
+  --lj:#FF6B00; --lj2:#FF8C33; --ljl:rgba(255,107,0,0.15); --ljg:rgba(255,107,0,0.35);
+  --pt:#121212; --pt2:#1C1C1C; --pt3:#272727;
+  --bg:#F5E6D3; --bg2:#EDD9C0; --bg3:#E4CAA8;
+  --br:#FFFFFF;
+  --txt:#1a1a1a; --muted:#6B5B4E; --dim:#A0917F;
+  --brd:rgba(0,0,0,0.07); --brd2:rgba(0,0,0,0.12);
+  --r:14px; --rlg:20px; --rxl:28px;
+  --sh:0 2px 16px rgba(0,0,0,0.08); --shlg:0 8px 40px rgba(0,0,0,0.15);
+  --font-title:'Bebas Neue',sans-serif;
+  --font-bold:'Barlow Condensed',sans-serif;
+  --font-body:'Nunito',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:var(--font-body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:var(--bg2)}::-webkit-scrollbar-thumb{background:var(--lj);border-radius:2px}
+::selection{background:var(--lj);color:#fff}
+button{cursor:pointer;border:none;outline:none;font-family:var(--font-body)}
+input,textarea,select{font-family:var(--font-body);outline:none}
+
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fin{from{opacity:0}to{opacity:1}}
+@keyframes sid{from{transform:translateX(100%)}to{transform:translateX(0)}}
+@keyframes mod{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(1.22)}}
+@keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes ticket{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+
+/* utilitários */
+.up{animation:up .5s ease both}
+.fin{animation:fin .25s ease}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:50px;font-family:var(--font-bold);font-weight:700;letter-spacing:.4px;transition:all .2s;cursor:pointer;border:none}
+.btn-lj{background:var(--lj);color:#fff;box-shadow:0 4px 18px var(--ljg)}
+.btn-lj:hover{background:#e55e00;transform:translateY(-2px);box-shadow:0 8px 28px var(--ljg)}
+.btn-lj:active{transform:scale(.97)}
+.btn-vm{background:var(--vm);color:#fff;box-shadow:0 4px 18px rgba(139,0,0,.3)}
+.btn-vm:hover{background:var(--vm2);transform:translateY(-2px)}
+.btn-out{background:transparent;color:var(--lj);border:2px solid var(--lj)}
+.btn-out:hover{background:var(--lj);color:#fff}
+.btn-ghost{background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.1)}
+.btn-ghost:hover{background:rgba(255,255,255,.14);color:#fff}
+
+/* cards */
+.card{background:#fff;border-radius:var(--rlg);box-shadow:var(--sh)}
+.card-dk{background:var(--pt2);border-radius:var(--rlg)}
+
+/* inputs */
+.inp{background:var(--bg);border:2px solid transparent;border-radius:12px;padding:11px 14px;font-size:14px;color:var(--txt);width:100%;transition:all .2s}
+.inp:focus{border-color:var(--lj);background:#fff;box-shadow:0 0 0 4px var(--ljl)}
+.inp::placeholder{color:var(--dim)}
+
+/* badges */
+.tag{display:inline-flex;align-items:center;padding:3px 9px;border-radius:20px;font-family:var(--font-bold);font-size:10px;font-weight:700;letter-spacing:.6px;text-transform:uppercase}
+.tag-lj{background:var(--ljl);color:var(--lj);border:1px solid rgba(255,107,0,.25)}
+.tag-vm{background:var(--vml);color:var(--vm);border:1px solid rgba(139,0,0,.2)}
+.tag-gn{background:rgba(22,163,74,.1);color:#15803d;border:1px solid rgba(22,163,74,.2)}
+.tag-az{background:rgba(59,130,246,.1);color:#1d4ed8;border:1px solid rgba(59,130,246,.2)}
+
+/* sidebar admin */
+.nav-item{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;font-family:var(--font-bold);font-weight:700;font-size:14px;letter-spacing:.3px;transition:all .15s;cursor:pointer;border:1px solid transparent;width:100%;text-align:left;color:rgba(255,255,255,.5)}
+.nav-item:hover{background:rgba(255,255,255,.05);color:rgba(255,255,255,.8)}
+.nav-item.active{background:var(--ljl);color:var(--lj);border-color:rgba(255,107,0,.3)}
+
+/* product image */
+.prod-img{width:100%;height:100%;object-fit:cover;border-radius:0}
