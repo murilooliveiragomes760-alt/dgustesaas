@@ -11,7 +11,8 @@ const firebaseConfig = {
   projectId: "dgusteapp",
   storageBucket: "dgusteapp.firebasestorage.app",
   messagingSenderId: "67623445130",
-  appId: "1:67623445130:web:54e746782c0b53aba44373"
+  appId: "1:67623445130:web:54e746782c0b53aba44373",
+  databaseURL: "https://dgusteapp-default-rtdb.firebaseio.com/"
 };
 
 // Initialize Firebase
