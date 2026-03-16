@@ -6,13 +6,13 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDEH9m7zuCtld-XopVKuKRFBlUTsq_DbyM",
-  authDomain: "dgusteapp.firebaseapp.com",
-  projectId: "dgusteapp",
-  storageBucket: "dgusteapp.firebasestorage.app",
-  messagingSenderId: "67623445130",
-  appId: "1:67623445130:web:54e746782c0b53aba44373",
-  databaseURL: "https://dgusteapp-default-rtdb.firebaseio.com/"
+  apiKey: "AIzaSyCecTDoznhHSRwpGyJpssoC14aRXpW4w0E",
+  authDomain: "dgustesaas.firebaseapp.com",
+  databaseURL: "https://dgustesaas-default-rtdb.firebaseio.com",
+  projectId: "dgustesaas",
+  storageBucket: "dgustesaas.firebasestorage.app",
+  messagingSenderId: "58596929142",
+  appId: "1:58596929142:web:a69c15eab8565361613957"
 };
 
 // Initialize Firebase
