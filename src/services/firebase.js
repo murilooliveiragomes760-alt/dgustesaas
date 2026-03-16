@@ -1,23 +1,21 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 import { getStorage } from "firebase/storage";
 
-// Configurações extraídas do seu código inicial
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCecTDoznhHSRwpGyJpssoC14aRXpW4w0E",
-  authDomain: "dgustesaas.firebaseapp.com",
-  projectId: "dgustesaas",
-  storageBucket: "dgustesaas.firebasestorage.app",
-  messagingSenderId: "58596929142",
-  appId: "1:58596929142:web:a69c15eab8565361613957",
-  databaseURL: "https://dgustesaas-default-rtdb.firebaseio.com" // Pego pelo print da URL
+  apiKey: "AIzaSyDEH9m7zuCtld-XopVKuKRFBlUTsq_DbyM",
+  authDomain: "dgusteapp.firebaseapp.com",
+  projectId: "dgusteapp",
+  storageBucket: "dgusteapp.firebasestorage.app",
+  messagingSenderId: "67623445130",
+  appId: "1:67623445130:web:54e746782c0b53aba44373"
 };
 
-// Inicializa o Firebase
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// Instâncias
 export const auth = getAuth(app);
-export const db = getDatabase(app); // Note que agora exportamos getDatabase
+export const db = getDatabase(app);
 export const storage = getStorage(app);
